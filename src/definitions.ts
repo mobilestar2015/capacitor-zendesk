@@ -11,9 +11,9 @@ export interface ZendeskChat {
   name?: string;
   email: string;
   phone: string;
-  botName: string; // answer bot's name
-  botImage: string; // bot's avatar url
-  chatOnly: boolean; // true: use only chat engine, false: use with answer bot and support engine
+  botName?: string; // answer bot's name
+  botImage?: string; // bot's avatar url
+  chatOnly?: boolean; // true: use only chat engine, false: use with answer bot and support engine
 }
 
 export interface ZendeskUser {
@@ -53,11 +53,11 @@ export interface ZendeskNotificationToken {
 }
 
 export interface ZendeskPlugin {
-  initialize(config: ZendeskConfig): Promise<boolean>;
-  initChat(config: ZendeskChat): Promise<boolean>;
-  setIdentity(user: ZendeskUser): Promise<boolean>;
-  setVisitorInfo(user: ZendeskVisitorInfo): Promise<boolean>;
-  setChatConfiguration(config: ZendeskChatConfig): Promise<boolean>;
+  initialize(config: ZendeskConfig): Promise<void>;
+  initChat(config: ZendeskChat): Promise<void>;
+  setIdentity(user: ZendeskUser): Promise<void>;
+  setVisitorInfo(user: ZendeskVisitorInfo): Promise<void>;
+  setChatConfiguration(config: ZendeskChatConfig): Promise<void>;
   setPrimaryColor(primaryColor: ZendeskPrimaryColor): Promise<void>;
   setNotificationToken(notificationToken: ZendeskNotificationToken): Promise<void>;
   showHelpCenter(config: ZendeskHelpCenterConfig): Promise<void>;

@@ -3,21 +3,17 @@ import { WebPlugin } from '@capacitor/core';
 import type { ZendeskPlugin, ZendeskConfig, ZendeskChat, ZendeskChatConfig, ZendeskHelpCenterConfig, ZendeskUser, ZendeskVisitorInfo, ZendeskPrimaryColor, ZendeskNotificationToken } from './definitions';
 
 export class ZendeskWeb extends WebPlugin implements ZendeskPlugin {
-  async initChat(config: ZendeskChat): Promise<boolean> {
+  async initChat(config: ZendeskChat): Promise<void> {
     console.log('Config', config);
-    return true;
   }
-  async setIdentity(user: ZendeskUser): Promise<boolean> {
+  async setIdentity(user: ZendeskUser): Promise<void> {
     console.log('User', user);
-    return true;
   }
-  async setVisitorInfo(user: ZendeskVisitorInfo): Promise<boolean> {
+  async setVisitorInfo(user: ZendeskVisitorInfo): Promise<void> {
     console.log('User', user);
-    return true;
   }
-  async setChatConfiguration(config: ZendeskChatConfig): Promise<boolean> {
+  async setChatConfiguration(config: ZendeskChatConfig): Promise<void> {
     console.log('Config', config);
-    return true;
   }
   async setPrimaryColor(primaryColor: ZendeskPrimaryColor): Promise<void> {
     console.log('Primary Color', primaryColor);
@@ -31,8 +27,7 @@ export class ZendeskWeb extends WebPlugin implements ZendeskPlugin {
   async startChat(config: ZendeskChat): Promise<void> {
     console.log('Start chat', config);
   }
-  async initialize(config: ZendeskConfig): Promise<boolean> {
+  async initialize(config: ZendeskConfig): Promise<void> {
     console.log('initialize', config);
-    return true;
   }
 }
