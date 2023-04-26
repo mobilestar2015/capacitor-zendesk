@@ -65,14 +65,12 @@ allprojects {
 ### initialize(...)
 
 ```typescript
-initialize(config: ZendeskConfig) => Promise<boolean>
+initialize(config: ZendeskConfig) => Promise<void>
 ```
 
 | Param        | Type                                                    |
 | ------------ | ------------------------------------------------------- |
 | **`config`** | <code><a href="#zendeskconfig">ZendeskConfig</a></code> |
-
-**Returns:** <code>Promise&lt;boolean&gt;</code>
 
 --------------------
 
@@ -80,14 +78,12 @@ initialize(config: ZendeskConfig) => Promise<boolean>
 ### initChat(...)
 
 ```typescript
-initChat(config: ZendeskChat) => Promise<boolean>
+initChat(config: ZendeskChat) => Promise<void>
 ```
 
 | Param        | Type                                                |
 | ------------ | --------------------------------------------------- |
 | **`config`** | <code><a href="#zendeskchat">ZendeskChat</a></code> |
-
-**Returns:** <code>Promise&lt;boolean&gt;</code>
 
 --------------------
 
@@ -95,14 +91,12 @@ initChat(config: ZendeskChat) => Promise<boolean>
 ### setIdentity(...)
 
 ```typescript
-setIdentity(user: ZendeskUser) => Promise<boolean>
+setIdentity(user: ZendeskUser) => Promise<void>
 ```
 
 | Param      | Type                                                |
 | ---------- | --------------------------------------------------- |
 | **`user`** | <code><a href="#zendeskuser">ZendeskUser</a></code> |
-
-**Returns:** <code>Promise&lt;boolean&gt;</code>
 
 --------------------
 
@@ -110,14 +104,12 @@ setIdentity(user: ZendeskUser) => Promise<boolean>
 ### setVisitorInfo(...)
 
 ```typescript
-setVisitorInfo(user: ZendeskVisitorInfo) => Promise<boolean>
+setVisitorInfo(user: ZendeskVisitorInfo) => Promise<void>
 ```
 
 | Param      | Type                                                              |
 | ---------- | ----------------------------------------------------------------- |
 | **`user`** | <code><a href="#zendeskvisitorinfo">ZendeskVisitorInfo</a></code> |
-
-**Returns:** <code>Promise&lt;boolean&gt;</code>
 
 --------------------
 
@@ -125,14 +117,12 @@ setVisitorInfo(user: ZendeskVisitorInfo) => Promise<boolean>
 ### setChatConfiguration(...)
 
 ```typescript
-setChatConfiguration(config: ZendeskChatConfig) => Promise<boolean>
+setChatConfiguration(config: ZendeskChatConfig) => Promise<void>
 ```
 
 | Param        | Type                                                            |
 | ------------ | --------------------------------------------------------------- |
 | **`config`** | <code><a href="#zendeskchatconfig">ZendeskChatConfig</a></code> |
-
-**Returns:** <code>Promise&lt;boolean&gt;</code>
 
 --------------------
 
