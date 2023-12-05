@@ -24,11 +24,6 @@ public class ZendeskPlugin extends Plugin {
     }
 
     @PluginMethod
-    public void setPrimaryColor(PluginCall call) {
-        call.unimplemented("This function is not supported on android");
-    }
-
-    @PluginMethod
     public void startChat(PluginCall call) {
         implementation.startChat();
         call.resolve();

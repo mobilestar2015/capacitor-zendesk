@@ -17,13 +17,6 @@ public class ZendeskPlugin: CAPPlugin {
         call.resolve()
     }
 
-    @objc func setPrimaryColor(_ call: CAPPluginCall) {
-        let colorString = call.getString("primaryColor")!
-        implementation.setPrimaryColor(primaryColor: colorString)
-
-        call.resolve()
-    }
-
     @objc func startChat(_ call: CAPPluginCall) {
         if let vc = self.bridge?.viewController {
             implementation.startChat(parentVC: vc)

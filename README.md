@@ -14,7 +14,6 @@ npx cap sync
 <docgen-index>
 
 * [`initialize(...)`](#initialize)
-* [`setPrimaryColor(...)`](#setprimarycolor)
 * [`startChat()`](#startchat)
 * [Interfaces](#interfaces)
 
@@ -36,19 +35,6 @@ initialize(config: ZendeskConfig) => Promise<void>
 --------------------
 
 
-### setPrimaryColor(...)
-
-```typescript
-setPrimaryColor(primaryColor: ZendeskPrimaryColor) => Promise<void>
-```
-
-| Param              | Type                                                                |
-| ------------------ | ------------------------------------------------------------------- |
-| **`primaryColor`** | <code><a href="#zendeskprimarycolor">ZendeskPrimaryColor</a></code> |
-
---------------------
-
-
 ### startChat()
 
 ```typescript
@@ -66,12 +52,5 @@ startChat() => Promise<void>
 | Prop      | Type                |
 | --------- | ------------------- |
 | **`key`** | <code>string</code> |
-
-
-#### ZendeskPrimaryColor
-
-| Prop               | Type                |
-| ------------------ | ------------------- |
-| **`primaryColor`** | <code>string</code> |
 
 </docgen-api>

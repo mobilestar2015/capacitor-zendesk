@@ -8,6 +8,5 @@ export interface ZendeskPrimaryColor {
 
 export interface ZendeskPlugin {
   initialize(config: ZendeskConfig): Promise<void>;
-  setPrimaryColor(primaryColor: ZendeskPrimaryColor): Promise<void>;
   startChat(): Promise<void>;
 }
