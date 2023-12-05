@@ -10,9 +10,7 @@ end
 target 'Plugin' do
   capacitor_pods
   
-  pod 'ZendeskAnswerBotSDK'
-  pod 'ZendeskChatSDK'
-  pod 'ZendeskSupportSDK'
+  pod 'ZendeskSDKMessaging'
 end
 
 target 'PluginTests' do

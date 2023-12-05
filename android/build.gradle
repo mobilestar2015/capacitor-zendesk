@@ -44,7 +44,7 @@ android {
 repositories {
     google()
     mavenCentral()
-    maven { url 'https://zendesk.jfrog.io/zendesk/repo' }
+    maven { url "https://zendesk.jfrog.io/artifactory/repo" }
 }
 
 
@@ -55,8 +55,5 @@ dependencies {
     testImplementation "junit:junit:$junitVersion"
     androidTestImplementation "androidx.test.ext:junit:$androidxJunitVersion"
     androidTestImplementation "androidx.test.espresso:espresso-core:$androidxEspressoCoreVersion"
-    api group: 'com.zendesk', name: 'messaging', version: '5.3.0'
-    api group: 'com.zendesk', name: 'support', version: '5.1.2'
-    api group: 'com.zendesk', name: 'answerbot', version: '3.1.1'
-    api group: 'com.zendesk', name: 'chat', version: '3.3.7'
+    implementation "zendesk.messaging:messaging-android:2.16.0"
 }
