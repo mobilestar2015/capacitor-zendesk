@@ -5,7 +5,7 @@ import ZendeskSDK
 @objc public class ZendeskImpl: NSObject {
     var presentedViewController: UINavigationController? = nil
 
-    @objc public func initialize(_ channelKey: String?) -> Bool {
+    @objc public func initialize(_ channelKey: String) {
         Zendesk.initialize(withChannelKey: channelKey,
                            messagingFactory: DefaultMessagingFactory()) { result in
                 if case let .failure(error) = result {
